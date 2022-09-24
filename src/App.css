@@ -1,8 +1,23 @@
 .App {
-    background-color: dark-blue;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; 
     width: 100vw;
+}
+
+.game-window {
+    border: 2px solid red;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-question {
+}
+
+.text-entry-box {
 }
