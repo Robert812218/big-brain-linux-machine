@@ -17,7 +17,9 @@
 }
 
 .text-question {
+    border: 2px solid red;
 }
 
 .text-entry-box {
+    border: 2px solid red;
 }
