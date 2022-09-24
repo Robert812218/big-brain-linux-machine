@@ -1,25 +1,33 @@
 .App {
     background-color: black;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh; 
     width: 100vw;
 }
 
-.game-window {
+.App-header {
+    border: 2px solid blue;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.Game-window {
     border: 2px solid red;
     height: 90%;
     width: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
 
-.text-question {
+.Text-question-box {
     border: 2px solid red;
 }
 
-.text-entry-box {
+.Text-entry-box {
     border: 2px solid red;
 }

@@ -31,7 +31,6 @@ import './App.css';
 
 export default function App() {   
   const [ans, setAns] = useState(0); 
-  const [exit, saveAndExit] = useState(0);
   useEffect(() => {
     init().then(() => {
       setAns(add(5, 5));
@@ -41,12 +40,12 @@ export default function App() {
   
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header">MEMORIZO
       </header>
-      <div className="game-window">
-        <div className="text-question"></div>
+      <div className="Game-window">
+        <div className="Text-entry-box">TEXT QUESTION BOX</div>
         <p>5 + 5 = {ans}</p>
-        <div className="text-entry-box"></div>
+        <div className="Text-question-box">TEXT ENTRY BOX</div>
       </div>
     </div>
   );  
