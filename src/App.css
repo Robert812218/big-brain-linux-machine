@@ -10,8 +10,9 @@
 
 .App-header {
     border: 2px solid blue;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 5% 15% 5% 15%;
+    margin: 2% 2% 2% 2%;
+    color: white;
 }
 
 .Game-window {
@@ -28,10 +29,12 @@
     border: 2px solid red;
     margin: 1em;
     padding: 5% 20% 5% 20%;
+    color: white;
 }
 
 .Text-entry-box {
     border: 2px solid red;
     margin: 1em;
     padding: 5% 20% 5% 20%;
+    color: white;
 }
