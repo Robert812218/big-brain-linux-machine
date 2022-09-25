@@ -181,7 +181,7 @@ pub mod command_list() {
         //ctrl-w|       Maximize current window horizontally
         let 13: (String, Vec<&str>) = ("Maximize current window horizontally", vec!["[ctrl]", "-", "w"]),
         //ctrl-w=       Make all windows of the same size
-        let 14: (String, Vec<&str>) = ("Make all windows of the same size", vec![]), 
+        let 14: (String, Vec<&str>) = ("Make all windows of the same size", vec!["c", "t", "r", "l", "-", "w", "="]), 
         //100 ctrl-w+   Add 100 lines to file in current window
         let 15: (String, Vec<&str>) = ("Add 100 lines to file in current window", vec!["1", "0", "0", "[ctrl]", "-", "w", "+"),
         //:vsplit file  Split windows vertically
@@ -199,15 +199,15 @@ pub mod command_list() {
 
     pub struct text_alignment_and_indentation() {
         // :set autoindent      Turn on auto-indentation
-        let 0: (String, Vec<&str>) = ("Turn on auto-indentation", vec![]),
+        let 0: (String, Vec<&str>) = ("Turn on auto-indentation", vec![":", "s", "e", "t", " ", "a", "u", "t", "o", "i", "n", "d", "e", "n", "t"]),
         // :%!fmt        Align all the lines
-        let 1: (String, Vec<&str>) = ("Align all the lines", vec![]),
+        let 1: (String, Vec<&str>) = ("Align all the lines", vec![":", "%", "!", "f", "m", "t"]),
         // !}fmt Align all lines at the current position
-        let 2: (String, Vec<&str>) = ("Align all lines at the current position", vec![]),
+        let 2: (String, Vec<&str>) = ("Align all lines at the current position", vec!["!", "}", "f", ""]),
         // 2!!fmt        Align the next two lines
-        let 3: (String, Vec<&str>) = ("Align the next two lines", vec![]),
+        let 3: (String, Vec<&str>) = ("Align the next two lines", vec!["2", "!", "!", "f", "m", "t"]),
         // :set smartindent      Turn on smart auto-indentation
-        let 4: (String, Vec<&str>) = ("Turn on smart auto-indentation", vec![]), 
+        let 4: (String, Vec<&str>) = ("Turn on smart auto-indentation", vec![":", "s", "e", "t", " ", "s", "m", "a", "r", "t", "i", "n", "d", "e", "n", "t"]), 
         // :set shiftwidth=8     Defines 8 spaces as indent size
         let 5: (String, Vec<&str>) = ("Defines 8 spaces as indent size", vec![]),
         // ctrl-t, ctrl-d        Indent and un-indent in Insert Mode
