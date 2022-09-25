@@ -28,6 +28,7 @@ import React, { useEffect, useState } from 'react';
 import init, { add } from "wasm-lib";
 import command_list from "wasm-lib";
 import './App.css';
+import ChooseTopic from "./ChoiceComponents/ChoiceBoxes";
 
 export default function App() {   
   const [ans, setAns] = useState(0); 
@@ -43,9 +44,8 @@ export default function App() {
       <header className="App-header">MEMORIZO
       </header>
       <div className="Game-window">
-        <div className="Text-entry-box">TEXT QUESTION BOX</div>
-        <p>5 + 5 = {ans}</p>
-        <div className="Text-question-box">TEXT ENTRY BOX</div>
+      {/* <p>rust_func: {ans}</p> */}
+	<div>{ChooseTopic}</div>
       </div>
     </div>
   );  

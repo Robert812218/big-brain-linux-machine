@@ -1,3 +1,7 @@
+use wasm_bindgen::prelude::*;
+
+
+
 // 1. System Based Commands
 // uname 	 Displays  Linux system information
 // uname -r	Displays  kernel release information
