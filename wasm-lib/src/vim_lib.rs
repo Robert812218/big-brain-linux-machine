@@ -53,121 +53,121 @@ pub mod command_list() {
         // y    Copy the selected text
         let 0: (String, Vec<&str>) = ("Copy the selected text", vec![]),
         // p    Paste the selected text
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Paste the selected text", vec![]),
         // dd   Cut the current line
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Cut the current line", vec![]),
         // yy   Copy the current line
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Copy the current line", vec![]),
         // y$   Copy to EOL
-        let 4: (String, Vec<&str>) = ("", vec![]),
+        let 4: (String, Vec<&str>) = ("Copy to EOL", vec![]),
         // D    Cut to EOL
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Cut to EOL", vec![]),
     }
     
     pub struct change_case_commands() {
         // Vu   Lowercase the entire line
-        let 0: (String, Vec<&str>) = ("", vec![]),
+        let 0: (String, Vec<&str>) = ("Lowercase the entire line", vec![]),
         //VU    Uppercase the entire line
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Uppercase the entire line", vec![]),
         //g~~   Invert selected case
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Invert the selected case", vec![]),
         //vEU   Switch selected word to uppercase
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Switch selected word to uppercase", vec![]),
         //vE~   Modify the current word case
-        let 4: (String, Vec<&str>) = ("", vec![]),
+        let 4: (String, Vec<&str>) = ("Modify the current word case", vec![]),
         // ggguG Set all text to lowercase
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Set all text to lowercase", vec![]),
         //gggUG Set all text to uppercase
-        let 6: (String, Vec<&str>) = ("", vec![]),
+        let 6: (String, Vec<&str>) = ("Set all text to uppercase", vec![]),
         //:set ignorecase       Ignore case when searching text
-        let 7: (String, Vec<&str>) = ("", vec![]),
+        let 7: (String, Vec<&str>) = ("Ignore case when searching text", vec![]),
         //:set smartcase        Ignore case in search, but not if an uppercase letter is used
-        let 8: (String, Vec<&str>) = ("", vec![]),
+        let 8: (String, Vec<&str>) = ("Ignore case in search, but not if an uppercase letter is used", vec![]),
         //:%s/\<./\u&/g Sets the first letter of each word to uppercase
-        let 9: (String, Vec<&str>) = ("", vec![]),
+        let 9: (String, Vec<&str>) = ("Sets the first letter of each word to uppercase", vec![]),
         //:%s/\<./\l&/g Sets the first letter of each word to lowercase
-        let 10: (String, Vec<&str>) = ("", vec![]),
+        let 10: (String, Vec<&str>) = ("Sets the first letter of each word to lowercase", vec![]),
         //:%s/.*/\u&    Sets the first letter of each line to uppercase
-        let 11: (String, Vec<&str>) = ("", vec![]),
+        let 11: (String, Vec<&str>) = ("Sets the first letter of each line to uppercase", vec![]),
         //:%s/.*/\l&    Sets the first letter of each line to lowercase
-        let 12: (String, Vec<&str>) = ("", vec![]),
+        let 12: (String, Vec<&str>) = ("Sets the first letter of each line to lowercase", vec![]),
     }
 
     pub struct navigate_within_file() {
         // k or Up Arrow        Move the cursor position up one line
-        let 0: (String, Vec<&str>) = ("", vec![]),
+        let 0: (String, Vec<&str>) = ("Move the cursor position up one line", vec![]),
         //j or Down Arrow Move the cursor down one line
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Move the cursor down one line", vec![]),
         //e     Move the cursor to the end of the word
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Move the cursor to the end of the first word", vec![]),
         //b     Move the cursor to the beginning of the word
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Move the cursor to the beginning of the word", vec![]),
         //0     Move the cursor to the beginning of the line
-        let 4: (String, Vec<&str>) = ("", vec![]),
+        let 4: (String, Vec<&str>) = ("Move the cursor to the beginning of the line", vec![]),
         //G     Move the cursor to EOF
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Move the cursor to the EOF", vec![]),
         //gg    Move the cursor to the beginning of the file
-        let 6: (String, Vec<&str>) = ("", vec![]),
+        let 6: (String, Vec<&str>) = ("Move the cursor to the beginning of the file", vec![]),
         //L     Move the cursor to the bottom of the screen
-        let 7: (String, Vec<&str>) = ("", vec![]),
+        let 7: (String, Vec<&str>) = ("Move the cursor to the bottom of screen", vec![]),
         //:80   Move the cursor to line number 80
-        let 8: (String, Vec<&str>) = ("", vec![]),
+        let 8: (String, Vec<&str>) = ("Move the cursor to line number 80", vec![]),
         //%     Move the cursor to matching parenthesis
-        let 9: (String, Vec<&str>) = ("", vec![]),
+        let 9: (String, Vec<&str>) = ("Move the cursor to matching parenthesis", vec![]),
         //[[    Move the cursor to function start
-        let 10: (String, Vec<&str>) = ("", vec![]),
+        let 10: (String, Vec<&str>) = ("Move the cursor to function start", vec![]),
         //[{    Move the cursor to block start
-        let 11: (String, Vec<&str>) = ("", vec![]),
+        let 11: (String, Vec<&str>) = ("Move the cursor to block start", vec![]),
     }
 
     pub struct file_explorer_read_write() {
         // :1,10 w myfile       Saves lines 1 to 10 in myfile
-        let 0: (String, Vec<&str>) = ("", vec![]),         
+        let 0: (String, Vec<&str>) = ("Save lines 1 to 10 in myfile", vec![]),         
         //:1,10 w >> myfile     Appends lines 1 to 10 to myfile
-        let 1: (String, Vec<&str>) = ("", vec![]),   
+        let 1: (String, Vec<&str>) = ("Appends lines 1 to 10 to myfile", vec![]),   
         //:r myfile     Inserts the content of myfile to current file
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Inserts the content of myfile to current file", vec![]),
         //:23r myfile   Inserts the content of myfile under line 23
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Inserts the content of myfile under line 23", vec![]),
         //:e .  Open the File Explorer
-        let 4: (String, Vec<&str>) = ("", vec![]),
+        let 4: (String, Vec<&str>) = ("Open the File Explorer", vec![]),
         //:Sex  Split window and open File Explorer
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Split window and open File Explorer", vec![]),
         //:Sex! Same as :Sex but splits window vertically
-        let 6: (String, Vec<&str>) = ("", vec![]),
+        let 6: (String, Vec<&str>) = ("Same as :Sex but splits windows vertically", vec![]),
         //:browse e     Graphical File Explorer
-        let 7: (String, Vec<&str>) = ("", vec![]),
+        let 7: (String, Vec<&str>) = ("Graphical File Explorer", vec![]),
         //:ls   List buffers
-        let 8: (String, Vec<&str>) = ("", vec![]),
+        let 8: (String, Vec<&str>) = ("List buffers", vec![]),
         //:cd ..        Move to parent or root directory
-        let 9: (String, Vec<&str>) = ("", vec![]),
+        let 9: (String, Vec<&str>) = ("Move to parent or root directory", vec![]),
         //:args List files
-        let 10: (String, Vec<&str>) = ("", vec![]),
+        let 10: (String, Vec<&str>) = ("List files", vec![]),
         //:args *.php   Open file list with .php extension
-        let 11: (String, Vec<&str>) = ("", vec![]),
+        let 11: (String, Vec<&str>) = ("Open file list with .php extension", vec![]),
         //:grep something *.php Returns list of .php files containing something
-        let 12: (String, Vec<&str>) = ("", vec![]),
+        let 12: (String, Vec<&str>) = ("Returns list of .php files containing something", vec![]),
         //gf    Open file name under cursor
-        let 13: (String, Vec<&str>) = ("", vec![]),
+        let 13: (String, Vec<&str>) = ("Open file name under cursor", vec![]),
     }
 
     pub struct interface_commands_tabs_windows() {
         // :tabnew      Opens a new tab
-        let 0: (String, Vec<&str>) = ("", vec![]),
+        let 0: (String, Vec<&str>) = ("Opens a new tab", vec![]),
         //gt    Go to next tab
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Go to next tab", vec![]),
         //:tabfirst     Go to first tab
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Go to first tab", vec![]),
         //:tablast      Go to last tab
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Go to last tab", vec![]),
         //:tabm n(position)     Rearrange open tabs
-        let 4: (String, Vec<&str>) = ("", vec![]),
+        let 4: (String, Vec<&str>) = ("Re-arrange open tabs", vec![]),
         //:tabdo %s/foo/bar/g   Execute same command in all tabs
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Execute same command in all tabs", vec![]),
         //:tab ball     Puts all open files in different tabs
-        let 6: (String, Vec<&str>) = ("", vec![]),
+        let 6: (String, Vec<&str>) = ("Puts all open files in different tabs", vec![]),
         //:new myfile.txt       Edit myfile.txt in new window
-        let 7: (String, Vec<&str>) = ("", vec![]),
+        let 7: (String, Vec<&str>) = ("Edit myfile.txt in new window", vec![]),
         //:e filename   Edit filename in current window
         let 8: (String, Vec<&str>) = ("", vec![]),
         //:split myfile Split the window and open myfile
