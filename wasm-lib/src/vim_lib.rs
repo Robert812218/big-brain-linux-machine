@@ -254,5 +254,3 @@ pub mod command_list() {
          let 7: (String, Vec<&str>) = ("", vec![]),
     }
 }
-
-    

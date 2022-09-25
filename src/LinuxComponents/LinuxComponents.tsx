@@ -1,320 +1,116 @@
-//
-//A	 	 
-// 	&	Start a new process in the background
-// 	alias	Create an alias •
-// 	apropos	Search Help manual pages (man -k)
-// 	apt	Search for and install software packages (Debian/Ubuntu)
-// 	apt-get	Search for and install software packages (Debian/Ubuntu)
-// 	aptitude	Search for and install software packages (Debian/Ubuntu)
-// 	aspell	Spell Checker
-// 	at	Schedule a command to run once at a particular time
-// 	awk	Find and Replace text, database sort/validate/index
-//B	 	 
-// 	basename	Strip directory and suffix from filenames
-// 	base32	Base32 encode/decode data and print to standard output
-// 	base64	Base64 encode/decode data and print to standard output
-// 	bash	GNU Bourne-Again SHell
-// 	bc	Arbitrary precision calculator language
-// 	bg	Send to background
-// 	bind	Set or display readline key and function bindings •
-// 	break	Exit from a loop •
-// 	builtin	Run a shell builtin
-// 	bzip2	Compress or decompress named file(s)
-//C	 	 
-// 	cal	Display a calendar
-// 	caller	Return the context of any active subroutine call •
-// 	case	Conditionally perform a command
-// 	cat	Concatenate and print (display) the content of files
-// 	cd	Change Directory
-// 	cfdisk	Partition table manipulator for Linux
-// 	chattr	Change file attributes on a Linux file system
-// 	chgrp	Change group ownership
-// 	chmod	Change access permissions
-// 	chown	Change file owner and group
-// 	chpasswd	Update passwords in batch mode
-// 	chroot	Run a command with a different root directory
-// 	chkconfig	System services (runlevel)
-// 	cksum	Print CRC checksum and byte counts
-// 	clear	Clear terminal screen
-// 	cmp	Compare two files
-// 	comm	Compare two sorted files line by line
-// 	command	Run a command - ignoring shell functions •
-// 	continue	Resume the next iteration of a loop •
-// 	cp	Copy one or more files to another location
-// 	cpio	Copy files to and from archives
-// 	cron	Daemon to execute scheduled commands
-// 	crontab	Schedule a command to run at a later time
-// 	csplit	Split a file into context-determined pieces
-// 	curl	Transfer data from or to a server
-// 	cut	Divide a file into several parts
-//D	 	 
-// 	date	Display or change the date & time
-// 	dc	Desk Calculator
-// 	dd	Data Duplicator - convert and copy a file, write disk headers, boot records
-// 	ddrescue	Data recovery tool
-// 	declare	Declare variables and give them attributes •
-// 	df	Display free disk space
-// 	diff	Display the differences between two files
-// 	diff3	Show differences among three files
-// 	dig	DNS lookup
-// 	dir	Briefly list directory contents
-// 	dircolors	Colour setup for 'ls'
-// 	dirname	Convert a full pathname to just a path
-// 	dirs	Display list of remembered directories
-// 	dos2unix	Windows/MAC to UNIX text file format converter
-// 	dmesg	Print kernel & driver messages
-// 	dpkg	Package manager (Debian/Ubuntu).
-// 	du	Estimate file space usage
-//E	 	 
-// 	echo	Display message on screen •
-// 	egrep	Search file(s) for lines that match an extended expression
-// 	eject	Eject removable media
-// 	enable	Enable and disable builtin shell commands •
-// 	env	Environment variables
-// 	ethtool	Ethernet card settings
-// 	eval	Evaluate several commands/arguments
-// 	exec	Execute a command
-// 	exit	Exit the shell
-// 	expand	Convert tabs to spaces
-// 	export	Set an environment variable
-// 	expr	Evaluate expressions
-//F	 	 
-// 	false	Do nothing, unsuccessfully
-// 	fdformat	Low-level format a floppy disk
-// 	fdisk	Partition table manipulator for Linux
-// 	fg	Send job to foreground
-// 	fgrep	Search file(s) for lines that match a fixed string
-// 	file	Determine file type
-// 	find	Search for files that meet a desired criteria
-// 	fmt	Reformat paragraph text
-// 	fold	Wrap text to fit a specified width
-// 	for	Expand words, and execute commands
-// 	format	Format disks or tapes
-// 	free	Display memory usage
-// 	fsck	File system consistency check and repair
-// 	ftp	File Transfer Protocol
-// 	function	Define Function Macros
-// 	fuser	Identify/kill the process that is accessing a file
-//G	 	 
-// 	gawk	Find and Replace text within file(s)
-// 	getopts	Parse positional parameters
-// 	getfacl	Get file access control lists
-// 	grep	Search file(s) for lines that match a given pattern
-// 	groupadd	Add a user security group
-// 	groupdel	Delete a group
-// 	groupmod	Modify a group
-// 	groups	Print group names a user is in
-// 	gzip	Compress or decompress named file(s)
-//H	 	 
-// 	hash	Remember the full pathname of a name argument
-// 	head	Output the first part of file(s)
-// 	help	Display help for a built-in command •
-// 	history	Command History
-// 	hostname	Print or set system name
-// 	htop	Interactive process viewer
-//I	 	 
-// 	iconv	Convert the character set of a file
-// 	id	Print user and group id's
-// 	if	Conditionally perform a command
-// 	ifconfig	Configure a network interface
-// 	ifdown	Stop a network interface
-// 	ifup	Start a network interface up
-// 	import	Capture an X server screen and save the image to file
-// 	install	Copy files and set attributes
-// 	iostat	Report CPU and i/o statistics
-// 	ip	Routing, devices and tunnels
-//J	 	 
-// 	jobs	List active jobs •
-// 	join	Join lines on a common field
-//K	 	 
-// 	kill	Kill a process by specifying its PID
-// 	killall	Kill processes by name
-//L	 	 
-// 	less	Display output one screen at a time
-// 	let	Perform arithmetic on shell variables •
-// 	link	Create a link to a file
-// 	ln	Create a symbolic link to a file
-// 	local	Create a function variable •
-// 	locate	Find files
-// 	logname	Print current login name
-// 	logout	Exit a login shell •
-// 	look	Display lines beginning with a given string
-// 	lpc	Line printer control program
-// 	lpr	Print files
-// 	lprint	Print a file
-// 	lprintd	Delete a print job
-// 	lprintq	List the print queue
-// 	lprm	Remove jobs from the print queue
-// 	lsattr	List file attributes on a Linux second extended file system
-// 	lsblk	List block devices
-// 	ls	List information about file(s)
-// 	lsof	List open files
-// 	lspci	List all PCI devices
-//M	 	 
-// 	make	Recompile a group of programs
-// 	man	Help manual
-// 	mapfile	Read lines from standard input into an indexed array variable •
-// 	mkdir	Create new folder(s)
-// 	mkfifo	Make FIFOs (named pipes)
-// 	mkfile	Make a file
-// 	mkisofs	Create a hybrid ISO9660/JOLIET/HFS filesystem
-// 	mknod	Make block or character special files
-// 	mktemp	Make a temporary file
-// 	more	Display output one screen at a time
-// 	most	Browse or page through a text file
-// 	mount	Mount a file system
-// 	mtools	Manipulate MS-DOS files
-// 	mtr	Network diagnostics (traceroute/ping)
-// 	mv	Move or rename files or directories
-// 	mmv	Mass Move and rename (files)
-//N	 	 
-// 	nc	Netcat, read and write data across networks
-// 	netstat	Networking connections/stats
-// 	nft	nftables for packet filtering and classification
-// 	nice	Set the priority of a command or job
-// 	nl	Number lines and write files
-// 	nohup	Run a command immune to hangups
-// 	notify-send	Send desktop notifications
-// 	nslookup	Query Internet name servers interactively
-//O	 	 
-// 	open	Open a file in its default application
-// 	op	Operator access
-//P	 	 
-// 	passwd	Modify a user password
-// 	paste	Merge lines of files
-// 	pathchk	Check file name portability
-// 	Perf	Performance analysis tools for Linux
-// 	ping	Test a network connection
-// 	pgrep	List processes by name
-// 	pkill	Kill processes by name
-// 	popd	Restore the previous value of the current directory
-// 	pr	Prepare files for printing
-// 	printcap	Printer capability database
-// 	printenv	Print environment variables
-// 	printf	Format and print data •
-// 	ps	Process status
-// 	pushd	Save and then change the current directory
-// 	pv	Monitor the progress of data through a pipe
-// 	pwd	Print Working Directory
-//Q	 	 
-// 	quota	Display disk usage and limits
-// 	quotacheck	Scan a file system for disk usage
-//R	 	 
-// 	ram	ram disk device
-// 	rar	Archive files with compression
-// 	rcp	Copy files between two machines
-// 	read	Read a line from standard input •
-// 	readarray	Read from stdin into an array variable •
-// 	readonly	Mark variables/functions as readonly
-// 	reboot	Reboot the system
-// 	rename	Rename files
-// 	renice	Alter priority of running processes
-// 	remsync	Synchronize remote files via email
-// 	return	Exit a shell function
-// 	rev	Reverse lines of a file
-// 	rm	Remove files
-// 	rmdir	Remove folder(s)
-// 	rsync	Remote file copy (Synchronize file trees)
-//S	 	 
-// 	screen	Multiplex terminal, run remote shells via ssh
-// 	scp	Secure copy (remote file copy)
-// 	sdiff	Merge two files interactively
-// 	sed	Stream Editor
-// 	select	Accept user choices via keyboard input
-// 	seq	Print numeric sequences
-// 	set	Manipulate shell variables and functions
-// 	setfacl	Set file access control lists.
-// 	sftp	Secure File Transfer Program
-// 	shift	Shift positional parameters
-// 	shopt	Shell Options
-// 	shuf	Generate random permutations
-// 	shutdown	Shutdown or restart linux
-// 	sleep	Delay for a specified time
-// 	slocate	Find files
-// 	sort	Sort text files
-// 	source	Run commands from a file '.'  •
-// 	split	Split a file into fixed-size pieces
-// 	ss	Socket Statistics
-// 	ssh	Secure Shell client (remote login program)
-// 	stat	Display file or file system status
-// 	strace	Trace system calls and signals
-// 	su	Substitute user identity
-// 	sudo	Execute a command as another user
-// 	sum	Print a checksum for a file
-// 	suspend	Suspend execution of this shell •
-// 	sync	Synchronize data on disk with memory
-//T	 	 
-// 	tail	Output the last part of a file
-// 	tar	Store, list or extract files in an archive
-// 	tee	Redirect output to multiple files
-// 	test	Evaluate a conditional expression
-// 	time	Measure Program running time
-// 	timeout	Run a command with a time limit
-// 	times	User and system times
-// 	tmux	Terminal multiplexer
-// 	touch	Change file timestamps
-// 	top	List processes running on the system
-// 	tput	Set terminal-dependent capabilities, color, position
-// 	traceroute	Trace Route to Host
-// 	trap	Execute a command when the shell receives a signal •
-// 	tr	Translate, squeeze, and/or delete characters
-// 	true	Do nothing, successfully
-// 	tsort	Topological sort
-// 	tty	Print filename of terminal on stdin
-// 	type	Describe a command •
-//U	 	 
-// 	ulimit	Limit user resources •
-// 	umask	Users file creation mask
-// 	umount	Unmount a device
-// 	unalias	Remove an alias •
-// 	uname	Print system information
-// 	unexpand	Convert spaces to tabs
-// 	uniq	Uniquify files
-// 	units	Convert units from one scale to another
-// 	unix2dos	UNIX to Windows or MAC text file format converter
-// 	unrar	Extract files from a rar archive
-// 	unset	Remove variable or function names
-// 	unshar	Unpack shell archive scripts
-// 	until	Execute commands (until error)
-// 	uptime	Show uptime
-// 	useradd	Create new user account
-// 	userdel	Delete a user account
-// 	usermod	Modify user account
-// 	users	List users currently logged in
-// 	uuencode	Encode a binary file
-// 	uudecode	Decode a file created by uuencode
-//V	 	 
-// 	v	Verbosely list directory contents ('ls -l -b')
-// 	vdir	Verbosely list directory contents ('ls -l -b')
-// 	vi	Text Editor
-// 	vmstat	Report virtual memory statistics
-//W	 	 
-// 	w	Show who is logged on and what they are doing
-// 	wait	Wait for a process to complete •
-// 	watch	Execute/display a program periodically
-// 	wc	Print byte, word, and line counts
-// 	whereis	Search the user's $path, man pages and source files for a program
-// 	which	Search the user's $path for a program file
-// 	while	Execute commands
-// 	who	Print all usernames currently logged in
-// 	whoami	Print the current user id and name ('id -un')
-// 	wget	Retrieve web pages or files via HTTP, HTTPS or FTP
-// 	write	Send a message to another user
-//X	 	 
-// 	xargs	Execute utility, passing constructed argument list(s)
-// 	xdg-open	Open a file or URL in the user's preferred application.
-// 	xxd	Make a hexdump or do the reverse
-// 	xz	Compress or decompress .xz and .lzma files
-// 	yes	Print a string until interrupted
-// 	zip	Package and compress (archive) files
-// 	.	Run a command script in the current shell
-// 	!!	Run the last command again
-// 	###	Comment / Remark
-//
+import React from 'react';
 
-
-
-
-export default function LinuxCommands() {
-
-}
+// Basic Linux commands
+// Command 	Description 	
+// ls 	Lists all files and directories in the present working directory
+// ls -R 	Lists files in sub-directories as well
+// ls -a 	Lists hidden files as well
+// ls -al 	Lists files and directories with detailed information like permissions,size, owner, etc.
+// cd or cd ~ 	Navigate to HOME directory
+// cd .. 	Move one level up
+// cd 	To change to a particular directory
+// cd / 	Move to the root directory
+// cat > filename 	Creates a new file
+// cat filename 	Displays the file content
+// cat file1 file2 > file3 	Joins two files (file1, file2) and stores the output in a new file (file3)
+// mv file "new file path" 	Moves the files to the new location
+// mv filename new_file_name 	Renames the file to a new filename
+// sudo 	Allows regular users to run programs with the security privileges of the superuser or root
+// rm filename 	Deletes a file
+// man 	Gives help information on a command
+// history 	Gives a list of all past commands typed in the current terminal session
+// clear 	Clears the terminal
+// mkdir directoryname 	Creates a new directory in the present working directory or a at the specified path
+// rmdir 	Deletes a directory
+// mv 	Renames a directory
+// pr -x 	Divides the file into x columns
+// pr -h 	Assigns a header to the file
+// pr -n 	Denotes the file with Line Numbers
+// lp -nc , lpr c 	Prints “c” copies of the File
+//  lp-d lp-P
+// 	Specifies name of the printer
+// apt-get
+// 	Command used to install and update packages
+// mail -s 'subject'
+// -c 'cc-address'
+// -b 'bcc-address'
+// 'to-address'
+// 	Command to send email
+// mail -s "Subject"
+// to-address < Filename
+// 	Command to send email with attachment
+// 
+// 
+// File Permission commands
+// Command 	Description 	
+// ls -l 	to show file type and access permission
+// r 	read permission
+// w 	write permission
+// x 	execute permission
+// -= 	no permission
+// Chown user 	For changing the ownership of a file/directory
+// Chown user:group filename 	change the user as well as group for a file or directory
+// 
+// Environment Variables command
+// Command 	Description 	
+// echo $VARIABLE 	To display value of a variable
+// env 	Displays all environment variables
+// VARIABLE_NAME= variable_value 	Create a new variable
+// Unset 	Remove a variable
+// export Variable=value 	To set value of an environment variable
+// User management commands of linux
+// Command 	Description 	
+// sudo adduser username 	To add a new user
+// sudo passwd -l 'username' 	To change the password of a user
+// sudo userdel -r 'username' 	To remove a newly created user
+// sudo usermod -a -G GROUPNAME USERNAME 	To add a user to a group
+// sudo deluser USER GROUPNAME 	To remove a user from a group
+// finger 	Shows information of all the users logged in
+// finger username 	Gives information of a particular user
+// 
+// Networking command
+// Command 	Description 	
+// SSH username@ip-address or hostname 	login into a remote Linux machine using SSH
+// Ping hostname="" or ="" 	To ping and Analyzing network and host connections
+// dir 	Display files in the current directory of a remote computer
+// cd "dirname" 	change directory to “dirname” on a remote computer
+// put file 	upload ‘file’ from local to remote computer
+// get file 	Download ‘file’ from remote to local computer
+// quit 	Logout
+// 
+// Process command
+// Command 	Description 	
+// bg 	To send a process to the background
+// fg 	To run a stopped process in the foreground
+// top 	Details on all Active Processes
+// ps 	Give the status of processes running for a user
+// ps PID 	Gives the status of a particular process
+// pidof 	Gives the Process ID (PID) of a process
+// kill PID 	Kills a process
+// nice 	Starts a process with a given priority
+// renice 	Changes priority of an already running process
+// df 	Gives free hard disk space on your system
+// free 	Gives free RAM on your system
+// 
+// VI Editing Commands
+// Command 	Description 	
+// i 	Insert at cursor (goes into insert mode)
+// a 	Write after cursor (goes into insert mode)
+// A 	Write at the end of line (goes into insert mode)
+// ESC 	Terminate insert mode
+// u 	Undo last change
+// U 	Undo all changes to the entire line
+// o 	Open a new line (goes into insert mode)
+// dd 	Delete line
+// 3dd 	Delete 3 lines
+// D 	Delete contents of line after the cursor
+// C 	Delete contents of a line after the cursor and insert new text. Press ESC key to end insertion.
+// dw 	Delete word
+// 4dw 	Delete 4 words
+// cw 	Change word
+// x 	Delete character at the cursor
+// r 	Replace character
+// R 	Overwrite characters from cursor onward
+// s 	Substitute one character under cursor continue to insert
+// S 	Substitute entire line and begin to insert at the beginning of the line
+// ~ 	Change case of individual character
