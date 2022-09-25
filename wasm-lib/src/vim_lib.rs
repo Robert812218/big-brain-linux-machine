@@ -169,88 +169,88 @@ pub mod command_list() {
         //:new myfile.txt       Edit myfile.txt in new window
         let 7: (String, Vec<&str>) = ("Edit myfile.txt in new window", vec![]),
         //:e filename   Edit filename in current window
-        let 8: (String, Vec<&str>) = ("", vec![]),
+        let 8: (String, Vec<&str>) = ("Edit filename in current window", vec![]),
         //:split myfile Split the window and open myfile
-        let 9: (String, Vec<&str>) = ("", vec![]),
+        let 9: (String, Vec<&str>) = ("Split the window and open myfile", vec![]),
         //ctrl-w + Up arrow   Puts cursor in top window
-        let 10: (String, Vec<&str>) = ("", vec![]),
+        let 10: (String, Vec<&str>) = ("Puts cursor in top window", vec![]),
         //ctrl-w ctrl-w (twice) Puts cursor in next window
-        let 11: (String, Vec<&str>) = ("", vec![]), 
+        let 11: (String, Vec<&str>) = ("Puts cursor in next window", vec![]), 
         //ctrl-w_       Maximize current window vertically
-        let 12: (String, Vec<&str>) = ("", vec![]),
+        let 12: (String, Vec<&str>) = ("Maximize window vertically", vec![]),
         //ctrl-w|       Maximize current window horizontally
-        let 13: (String, Vec<&str>) = ("", vec![]),
+        let 13: (String, Vec<&str>) = ("Maximize current window horizontally", vec![]),
         //ctrl-w=       Make all windows of the same size
-        let 14: (String, Vec<&str>) = ("", vec![]), 
+        let 14: (String, Vec<&str>) = ("Make all windows of the same size", vec![]), 
         //100 ctrl-w+   Add 100 lines to file in current window
-        let 15: (String, Vec<&str>) = ("", vec![]),
+        let 15: (String, Vec<&str>) = ("Add 100 lines to file in current window", vec![]),
         //:vsplit file  Split windows vertically
-        let 16: (String, Vec<&str>) = ("", vec![]),
+        let 16: (String, Vec<&str>) = ("Split windows vertically", vec![]),
         //:sview file   Split windows vertically (read-only)
-        let 17: (String, Vec<&str>) = ("", vec![]),
+        let 17: (String, Vec<&str>) = ("Split windows vertically (read-only)", vec![]),
         //:hide Close current window
-        let 18: (String, Vec<&str>) = ("", vec![]),
+        let 18: (String, Vec<&str>) = ("Close current window", vec![]),
         //:­nly Close all windows, except the current
-        let 19: (String, Vec<&str>) = ("", vec![]),
+        let 19: (String, Vec<&str>) = ("Close all windows (except current)", vec![]),
         //:b 4  Open tab #4 in current window
-        let 20: (String, Vec<&str>) = ("", vec![]),
+        let 20: (String, Vec<&str>) = ("Open tab #4 in current window", vec![]),
 
     }
 
     pub struct text_alignment_and_indentation() {
         // :set autoindent      Turn on auto-indentation
-        let 0: (String, Vec<&str>) = ("", vec![]),
+        let 0: (String, Vec<&str>) = ("Turn on auto-indentation", vec![]),
         // :%!fmt        Align all the lines
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Align all the lines", vec![]),
         // !}fmt Align all lines at the current position
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Align all lines at the current position", vec![]),
         // 2!!fmt        Align the next two lines
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Align the next two lines", vec![]),
         // :set smartindent      Turn on smart auto-indentation
-        let 4: (String, Vec<&str>) = ("", vec![]), 
+        let 4: (String, Vec<&str>) = ("Turn on smart auto-indentation", vec![]), 
         // :set shiftwidth=8     Defines 8 spaces as indent size
-        let 5: (String, Vec<&str>) = ("", vec![]),
+        let 5: (String, Vec<&str>) = ("Defines 8 spaces as indent size", vec![]),
         // ctrl-t, ctrl-d        Indent and un-indent in Insert Mode
-        let 6: (String, Vec<&str>) = ("", vec![]), 
+        let 6: (String, Vec<&str>) = ("Indent and un-indent in Insert Mode", vec![]), 
         // >>    Indent the current line
-        let 7: (String, Vec<&str>) = ("", vec![]), 
+        let 7: (String, Vec<&str>) = ("Indent the current line", vec![]), 
         // <<    Un-indent the current line
-        let 8: (String, Vec<&str>) = ("", vec![]),
+        let 8: (String, Vec<&str>) = ("Un-indent the current line", vec![]),
         // =%    Indent the code between parenthesis
-        let 9: (String, Vec<&str>) = ("", vec![]),
+        let 9: (String, Vec<&str>) = ("Indent the code between parethesis", vec![]),
         // 1GVG= Indent the entire file
-        let 10: (String, Vec<&str>) = ("", vec![]),
+        let 10: (String, Vec<&str>) = ("Indent the current file", vec![]),
 
     }
 
     pub struct autocomplete_vim_commands() {
         // Ctrl+n Ctrl+p        Complete the suggested word (Insert Mode)
-        let 0: (String, Vec<&str>) = ("", vec![]),
+        let 0: (String, Vec<&str>) = ("Complete the suggested word (Insert Mode)", vec![]),
         // Ctrl+x Ctrl+l        Complete the suggested line
-        let 1: (String, Vec<&str>) = ("", vec![]),
+        let 1: (String, Vec<&str>) = ("Complete the suggested line", vec![]),
         // :set dictionary=en   Define en as active dictionary
-        let 2: (String, Vec<&str>) = ("", vec![]),
+        let 2: (String, Vec<&str>) = ("Define en as active dictionary", vec![]),
         // Ctrl+x Ctrl+k        Complete with the active dictionary
-        let 3: (String, Vec<&str>) = ("", vec![]),
+        let 3: (String, Vec<&str>) = ("Complete with the active dictionary", vec![]),
 
     }
 
     pub struct unix_only_vim_commands() {
          // :!get        Execute the get Unix command, then return to Vim
-         let 0: (String, Vec<&str>) = ("", vec![]),
+         let 0: (String, Vec<&str>) = ("Execute the get Unix command, then retun to Vim", vec![]),
          // !!get Execute the get Unix command and insert output in current file
-         let 1: (String, Vec<&str>) = ("", vec![]),
+         let 1: (String, Vec<&str>) = ("Execute the Unix command and insert output in current file", vec![]),
          //:sh   Return to Unix shell
-         let 2: (String, Vec<&str>) = ("", vec![]), 
+         let 2: (String, Vec<&str>) = ("Return to Unix shell", vec![]), 
          //$exit Exit the Unix shell and return to Vim
-         let 3: (String, Vec<&str>) = ("", vec![]),
+         let 3: (String, Vec<&str>) = ("Exit the Unix shell and return to Vim", vec![]),
          // m {q-p}      Marks the current position as {q-p}
-         let 4: (String, Vec<&str>) = ("", vec![]),
+         let 4: (String, Vec<&str>) = ("Mark the current position as {q-p}", vec![]),
          //‘ {q-p}       Move to position {q-p} (used after marking)
-         let 5: (String, Vec<&str>) = ("", vec![]),
+         let 5: (String, Vec<&str>) = ("Move to position {q-p} (used after marking)", vec![]),
          //“     Move to previously marked position
-         let 6: (String, Vec<&str>) = ("", vec![]), 
+         let 6: (String, Vec<&str>) = ("Move to previously marked position", vec![]), 
          //:ab mail hi@designbombs.com   Define mail as abbreviation of hi@designbombs.com
-         let 7: (String, Vec<&str>) = ("", vec![]),
+         let 7: (String, Vec<&str>) = ("Define mail as abbreviation of hi@designbombs.com", vec![]),
     }
 }
