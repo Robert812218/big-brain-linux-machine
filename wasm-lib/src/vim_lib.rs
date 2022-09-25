@@ -175,25 +175,25 @@ pub mod command_list() {
         //ctrl-w + Up arrow   Puts cursor in top window
         let 10: (String, Vec<&str>) = ("Puts cursor in top window", vec!["c", "t", "r", "l", " ", "+", "[up arrow]"),
         //ctrl-w ctrl-w (twice) Puts cursor in next window
-        let 11: (String, Vec<&str>) = ("Puts cursor in next window", vec![]), 
+        let 11: (String, Vec<&str>) = ("Puts cursor in next window", vec!["[ctrl]", "-", "w", " ", "[ctrl]", "-", "w", "(twice)"]), 
         //ctrl-w_       Maximize current window vertically
-        let 12: (String, Vec<&str>) = ("Maximize window vertically", vec![]),
+        let 12: (String, Vec<&str>) = ("Maximize current window vertically", vec!["[ctrl]", "-", "w"]),
         //ctrl-w|       Maximize current window horizontally
-        let 13: (String, Vec<&str>) = ("Maximize current window horizontally", vec![]),
+        let 13: (String, Vec<&str>) = ("Maximize current window horizontally", vec!["[ctrl]", "-", "w"]),
         //ctrl-w=       Make all windows of the same size
         let 14: (String, Vec<&str>) = ("Make all windows of the same size", vec![]), 
         //100 ctrl-w+   Add 100 lines to file in current window
-        let 15: (String, Vec<&str>) = ("Add 100 lines to file in current window", vec![]),
+        let 15: (String, Vec<&str>) = ("Add 100 lines to file in current window", vec!["1", "0", "0", "[ctrl]", "-", "w", "+"),
         //:vsplit file  Split windows vertically
-        let 16: (String, Vec<&str>) = ("Split windows vertically", vec![]),
+        let 16: (String, Vec<&str>) = ("Split windows vertically", vec![":", "v", "s", "p", "l", "i", "t"]),
         //:sview file   Split windows vertically (read-only)
-        let 17: (String, Vec<&str>) = ("Split windows vertically (read-only)", vec![]),
+        let 17: (String, Vec<&str>) = ("Split windows vertically (read-only)", vec!["s", "v", "i", "e", "w", "f", "i", "l", "e"]),
         //:hide Close current window
-        let 18: (String, Vec<&str>) = ("Close current window", vec![]),
+        let 18: (String, Vec<&str>) = ("Close current window", vec![":", "h", "i", "d", "e"]),
         //:­nly Close all windows, except the current
-        let 19: (String, Vec<&str>) = ("Close all windows (except current)", vec![]),
+        let 19: (String, Vec<&str>) = ("Close all windows (except current)", vec![":", "n", "l", "y"]),
         //:b 4  Open tab #4 in current window
-        let 20: (String, Vec<&str>) = ("Open tab #4 in current window", vec![]),
+        let 20: (String, Vec<&str>) = ("Open tab #4 in current window", vec![":", "n", "l", "y"]),
 
     }
 
