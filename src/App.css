@@ -27,14 +27,14 @@
 
 .Text-question-box {
     border: 2px solid red;
-    margin: 1em;
-    padding: 5% 20% 5% 20%;
+    margin: 2em;
+    padding: 5% 10% 5% 10%;
     color: white;
 }
 
 .Text-entry-box {
     border: 2px solid red;
-    margin: 1em;
-    padding: 5% 20% 5% 20%;
+    margin: 2em;
+    padding: 5% 10% 5% 10%;
     color: white;
 }

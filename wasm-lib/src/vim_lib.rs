@@ -161,19 +161,19 @@ pub mod command_list() {
         //:tablast      Go to last tab
         let 3: (String, Vec<&str>) = ("Go to last tab", vec![":", "t", "a", "b", "l", "a", "s", "t"]),
         //:tabm n(position)     Rearrange open tabs
-        let 4: (String, Vec<&str>) = ("Re-arrange open tabs", vec![]),
+        let 4: (String, Vec<&str>) = ("Re-arrange open tabs", vec![":", "t", "a", "b", "m", " ", "n", "[position]"]),
         //:tabdo %s/foo/bar/g   Execute same command in all tabs
-        let 5: (String, Vec<&str>) = ("Execute same command in all tabs", vec![]),
+        let 5: (String, Vec<&str>) = ("Execute same command in all tabs", vec!["t", "a", "b", "d", "o", " ", "%", "s", "/", "f", "o", "o", "/", "b", "a", "r", "/", "g"]),
         //:tab ball     Puts all open files in different tabs
-        let 6: (String, Vec<&str>) = ("Puts all open files in different tabs", vec![]),
+        let 6: (String, Vec<&str>) = ("Puts all open files in different tabs", vec![":", "t", "a", "b", " ", "b", "a", "l", "l"]),
         //:new myfile.txt       Edit myfile.txt in new window
-        let 7: (String, Vec<&str>) = ("Edit myfile.txt in new window", vec![]),
+        let 7: (String, Vec<&str>) = ("Edit myfile.txt in new window", vec![":", "n", "e", "w", " ", "m", "y", "f", "l", "e", ".", "t", "x", "t"]),
         //:e filename   Edit filename in current window
-        let 8: (String, Vec<&str>) = ("Edit filename in current window", vec![]),
+        let 8: (String, Vec<&str>) = ("Edit filename in current window", vec![":", "e", " ", "f", "i", "l", "e", "n", "a", "m", "e"]),
         //:split myfile Split the window and open myfile
-        let 9: (String, Vec<&str>) = ("Split the window and open myfile", vec![]),
+        let 9: (String, Vec<&str>) = ("Split the window and open myfile", vec![":", "s", "p", "l", "i", "t", " ", "m", "y", "f", "i", "l", "e"]),
         //ctrl-w + Up arrow   Puts cursor in top window
-        let 10: (String, Vec<&str>) = ("Puts cursor in top window", vec![]),
+        let 10: (String, Vec<&str>) = ("Puts cursor in top window", vec!["c", "t", "r", "l", " ", "+", "[up arrow]"),
         //ctrl-w ctrl-w (twice) Puts cursor in next window
         let 11: (String, Vec<&str>) = ("Puts cursor in next window", vec![]), 
         //ctrl-w_       Maximize current window vertically
