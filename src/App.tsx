@@ -32,20 +32,27 @@ import ChooseTopic from "./ChoiceComponents/ChoiceBoxes";
 
 export default function App() {   
   const [ans, setAns] = useState(0); 
+  const [testKeyPressed, setTestKeyPressed] = useState<boolean>(false);
   useEffect(() => {
     init().then(() => {
       setAns(add(5, 5));
     })  
   }, []) 
 
+  function handleAnswerChange(event) {
+        if (event.key === 'e') {
+		alert("'e' has been pressed.")
+	}
+  }
   
   return (
     <div className="App">
       <header className="App-header">MEMORIZO
       </header>
       <div className="Game-window">
-      <p>rust_func: {ans}</p>
+     {/* <p>rust_func: {ans}</p> */}
       {/*	<div>{ChooseTopic}</div> */}
+      <input type="text" value={ans} onKeyPress={handleAnswerChange}/>
       </div>
     </div>
   );  
