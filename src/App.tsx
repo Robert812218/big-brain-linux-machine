@@ -44,7 +44,7 @@ export default function App() {
       <header className="App-header">MEMORIZO
       </header>
       <div className="Game-window">
-      {/* <p>rust_func: {ans}</p> */}
+      <p>rust_func: {ans}</p>
       {/*	<div>{ChooseTopic}</div> */}
       </div>
     </div>

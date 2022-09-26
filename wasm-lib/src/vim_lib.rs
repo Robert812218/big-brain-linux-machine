@@ -78,7 +78,7 @@ pub mod command_list() {
         // ggguG Set all text to lowercase
         let 5: (String, Vec<&str>) = ("Set all text to lowercase", vec!["g", "g", "g", "u", "G"]),
         //gggUG Set all text to uppercase
-        let 6: (String, Vec<&str>) = ("Set all text to uppercase", vec![]),
+        let 6: (String, Vec<&str>) = ("Set all text to uppercase", vec!["g", "g", "g", "u", "G"]),
         //:set ignorecase       Ignore case when searching text
         let 7: (String, Vec<&str>) = ("Ignore case when searching text", vec![]),
         //:set smartcase        Ignore case in search, but not if an uppercase letter is used
