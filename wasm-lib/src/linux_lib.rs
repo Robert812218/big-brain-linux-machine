@@ -157,7 +157,6 @@ pub fn process_related_commands() {
 pub fn file_permission_commands() {
         // 6. File Permission Commands
         // chmod octal filename         	Change file permissions of the file to octal
-        // 
         // Example
         // chmod 777 /data/test.c       	Set rwx permissions to owner, group and everyone (everyone else who has access to the server)
         // chmod 755 /data/test.c       	Set rwx to the owner and r_x to group and everyone
