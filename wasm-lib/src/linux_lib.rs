@@ -5,87 +5,153 @@ pub fn () -> {
     pub fn system_based_commands() {
         // 1. System Based Commands
         // uname 	 Displays  Linux system information
+        let : ("", vec![]),
         // uname -r	Displays  kernel release information
+        let : ("", vec![]),
         // uptime	Displays how long the system has been running including load average
+        let : ("", vec![]),
         // hostname	Shows the system hostname
+        let : ("", vec![]),
         // hostname -i	Displays the IP address of the system
+        let : ("", vec![]),
         // last reboot	Shows system reboot history
+        let : ("", vec![]),
         // date	Displays current system date and time
+        let : ("", vec![]),
         // timedatectl	Query and change the System clock
+        let : ("", vec![]),
         // cal	Displays the current calendar month and day
+        let : ("", vec![]),
         // w	Displays currently  logged in users in the system
+        let : ("", vec![]),
         // whoami	Displays who you are logged in as
+        let : ("", vec![]),
         // finger username	Displays information about the user
+        let : ("", vec![]),
     }
 
     pub fn hardware_based_components() {
         // 2. Hardware Based Commands
         // dmesg	Displays bootup messages
+        let : ("", vec![]),
         // cat /proc/cpuinfo	Displays more information about CPU e.g model, model name, cores, vendor id
+        let : ("", vec![]),
         // cat /proc/meminfo	Displays more information about hardware memory e.g. Total and Free memory
+        let : ("", vec![]),
         // lshw	Displays information about system's hardware configuration
+        let : ("", vec![]),
         // lsblk	Displays block devices related information
+        let : ("", vec![]),
         // free -m	Displays free and used memory in the system (-m flag indicates memory in MB)
+        let : ("", vec![]),
         // lspci -tv	Displays PCI devices in a tree-like diagram
+        let : ("", vec![]),
         // lsusb -tv	Displays USB devices in a tree-like diagram
+        let : ("", vec![]),
         // dmidecode	Displays hardware information from the BIOS
+        let : ("", vec![]),
         // hdparm -i /dev/xda	Displays information about disk data
+        let : ("", vec![]),
         // hdparm -tT /dev/xda <:code>	Conducts a read speed test on device xda
+        let : ("", vec![]),
         // badblocks -s /dev/xda	Tests  for unreadable blocks on disk
+        let : ("", vec![]),
     }
     
     pub fn users_management_commands() {
         // 3. Users Management Commands
         // id	Displays the details of the active user e.g. uid, gid, and groups
+        let : ("", vec![]),
         // last	Shows the last logins in the system
+        let : ("", vec![]),
         // who	Shows who is logged in to the system
+        let : ("", vec![]),
         // groupadd "admin" 	Adds the group 'admin'
+        let : ("", vec![]),
         // adduser "Sam"	Adds user Sam
+        let : ("", vec![]),
         // userdel "Sam"	Deletes user Sam
+        let : ("", vec![]),
         // usermod	Used for changing / modifying user information
+        let : ("", vec![]),
     }
 
     pub fn file_commands() {
         // 4. File Commands
         // ls -al	Lists files - both regular &  hidden files and their permissions as well.
+        let : ("", vec![]),
         // pwd	Displays the current directory file path
+        let : ("", vec![]),
         // mkdir 'directory_name'	Creates a new directory
+        let : ("", vec![]),
         // rm file_name 	Removes a file
+        let : ("", vec![]),
         // rm -f filename	Forcefully removes a file
+        let : ("", vec![]),
         // rm -r directory_name	Removes a directory recursively
+        let : ("", vec![]),
         // rm -rf directory_name	Removes a directory forcefully and recursively
+        let : ("", vec![]),
         // cp file1 file2	Copies the contents of file1 to file2
+        let : ("", vec![]),
         // cp -r dir1 dir2	Recursively Copies dir1 to dir2. dir2 is created if it does not exist
+        let : ("", vec![]),
         // mv file1 file2	Renames file1 to file2
+        let : ("", vec![]),
         // ln -s /path/to/file_name   link_name	Creates a symbolic link to file_name
+        let : ("", vec![]),
         // touch file_name	Creates a new file
+        let : ("", vec![]),
         // cat > file_name	Places standard input into a file
+        let : ("", vec![]),
         // more file_name	Outputs the contents of a file
+        let : ("", vec![]),
         // head file_name	Displays the first 10 lines of a file
+        let : ("", vec![]),
         // tail file_name	Displays the last 10 lines of a file
+        let : ("", vec![]),
         // gpg -c file_name	Encrypts a file
+        let : ("", vec![]),
         // gpg file_name.gpg	Decrypts a file
+        let : ("", vec![]),
         // wc	Prints the number of bytes, words and lines in a file
+        let : ("", vec![]),
         // xargs	Executes commands from standard input
+        let : ("", vec![]),
     }
 }
 
 pub fn process_related_commands() {
         // 5. Process Related Commands
+        let : ("", vec![]),
         // ps	Display currently active processes
+        let : ("", vec![]),
         // ps aux | grep 'telnet'	Searches for the id of the process 'telnet'
+        let : ("", vec![]),
         // pmap	Displays memory map of processes
+        let : ("", vec![]),
         // top	 Displays all running processes
+        let : ("", vec![]),
         // kill pid	Terminates process with a given pid
+        let : ("", vec![]),
         // killall proc	Kills / Terminates all processes named proc
+        let : ("", vec![]),
         // pkill process-name	Sends a signal to a process with its name
+        let : ("", vec![]),
         // bg	Resumes suspended jobs in the background
+        let : ("", vec![]),
         // fg	Brings suspended jobs to the foreground
+        let : ("", vec![]),
         // fg n	job n to the foreground
+        let : ("", vec![]),
         // lsof	Lists files that are open by processes
+        let : ("", vec![]),
         // renice 19 PID	makes a process run with very low priority
+        let : ("", vec![]),
         // pgrep firefox	find Firefox process ID
+        let : ("", vec![]),
         // pstree	visualizing processes in tree model
+        let : ("", vec![]),
 }
 
 pub fn file_permission_commands() {
