@@ -7,12 +7,14 @@ import LinuxGame from './LinuxGame';
 
 export default function App(props: any) {   
   const [ans, setAns] = useState(0); 
+  const [view, setView] = useState<boolean>(false);
   useEffect(() => {
     init().then(() => {
       setAns(add(5, 5));
     })  
   }, []) 
   
+    
 
   return (
     <div className="App">
