@@ -2,20 +2,21 @@ import React, { useEffect, useState } from 'react';
 import init, { add } from "wasm-lib";
 import command_list from "wasm-lib";
 import './App.css';
-import VimCommands from './VimComponents/VimCommands';
 
 export default function App(props: any) {   
   const [ans, setAns] = useState(0); 
-  const [testKeyPressed, setTestKeyPressed] = useState<boolean>(false);
-  const [linuxGame, setLinuxGame] = useState<boolean>(false);
   useEffect(() => {
     init().then(() => {
       setAns(add(5, 5));
     })  
   }, []) 
   
-  function RenderArea(props: string) {
-    return <h1>Hello, props.name</h1>
+  function RenderVim() {
+    return <h4>VIM GAME</h4>
+  }
+
+  function RenderLinux() {
+    return <h4>LINUX GAME</h4>
   }
 
   return (
@@ -30,10 +31,11 @@ export default function App(props: any) {
         <h2>Linux or Vim?</h2>
 	<div className="Game-choice-container">
 	  <button className="Game-choice-button" onClick={() => 
-	       alert("You chose Linux")
-	  }>LINUX</button>
+	         alert("You chose Linux") 
+			        
+	  }>LINUX</button> 
 	  <button className="Game-choice-button" onClick={() => 
-	  	alert("You chose Vim")
+	        alert("You chose Vim") 
 	  }> VIM </button>
 	</div>
       </div>
