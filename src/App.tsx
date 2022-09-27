@@ -39,20 +39,21 @@ export default function App() {
     })  
   }, []) 
 
-  function handleAnswerChange(event) {
-        if (event.key === 'e') {
-		alert("'e' has been pressed.")
-	}
-  }
+   
   
   return (
     <div className="App">
       <header className="App-header">MEMORIZO
       </header>
       <div className="Game-window">
-     {/* <p>rust_func: {ans}</p> */}
+      {/* <p>rust_func: {ans}</p> */}
       {/*	<div>{ChooseTopic}</div> */}
-      <input type="text" value={ans} onKeyPress={handleAnswerChange}/>
+	<h3>this is the game</h3>
+        <h2>Linux or Vim?</h2>
+	<div className="Game-choice-container">
+	  <button className="">LINUX</button>
+	  <button>VIM</button>
+	</div>
       </div>
     </div>
   );  

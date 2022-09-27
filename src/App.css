@@ -38,3 +38,14 @@
     padding: 5% 10% 5% 10%;
     color: white;
 }
+
+.Game-choice-container {
+    border: 2px solid green; 
+    width: 20em;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
