@@ -1,3 +1,11 @@
+export default function VimCommands() {
+  return (
+    <div>
+      <h5>VimCommands</h5>
+    </div>
+  );
+}
+
 // SAVE AND EXIT COMMANDS:
 //
 // :e myfile - Opens "myfile" for editing
@@ -155,5 +163,3 @@
 //
 //
 
-export default function VimCommands() {
-}

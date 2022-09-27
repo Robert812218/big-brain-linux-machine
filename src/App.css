@@ -40,12 +40,19 @@
 }
 
 .Game-choice-container {
-    border: 2px solid green; 
+    border: 2px outset green; 
     width: 20em;
     height: 5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10%;
+}
+
+.Game-choice-button {
+    width: 40%;
+    height: 40%;
+    background-color: #0abf22;
 }
 
 
