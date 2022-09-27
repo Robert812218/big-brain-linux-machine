@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './VimGame.css';
 
 
 export default function VimGame() {

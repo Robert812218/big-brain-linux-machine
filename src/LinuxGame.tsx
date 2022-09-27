@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./LinuxGame.css";
 
 export default function LinuxGame() {
   return (
