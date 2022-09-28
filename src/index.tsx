@@ -11,11 +11,11 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <React.StrictMode>
-    <App />
-    <LinuxGame />
-    <VimGame />
-  </React.StrictMode>
+   <React.StrictMode>
+     <App />
+    {/* <LinuxGame /> */}
+    {/* <VimGame /> */}
+   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

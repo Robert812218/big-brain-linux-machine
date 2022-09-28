@@ -209,48 +209,48 @@ pub mod command_list() {
         // :set smartindent      Turn on smart auto-indentation
         let 4: (String, Vec<&str>) = ("Turn on smart auto-indentation", vec![":", "s", "e", "t", " ", "s", "m", "a", "r", "t", "i", "n", "d", "e", "n", "t"]), 
         // :set shiftwidth=8     Defines 8 spaces as indent size
-        let 5: (String, Vec<&str>) = ("Defines 8 spaces as indent size", vec![]),
+        let 5: (String, Vec<&str>) = ("Defines 8 spaces as indent size", vec![":", "s", "e", "t", " ", "s", "h", "i", "f", "t", "w", "i", "d", "t", "h", "=", "8"]),
         // ctrl-t, ctrl-d        Indent and un-indent in Insert Mode
-        let 6: (String, Vec<&str>) = ("Indent and un-indent in Insert Mode", vec![]), 
+        let 6: (String, Vec<&str>) = ("Indent and un-indent in Insert Mode", vec!["c", "t", "r", "l", "-", "t",], vec!["c", "t", "r", "l", "-", "d"]),
         // >>    Indent the current line
-        let 7: (String, Vec<&str>) = ("Indent the current line", vec![]), 
+        let 7: (String, Vec<&str>) = ("Indent the current line", vec![">", ">"]), 
         // <<    Un-indent the current line
-        let 8: (String, Vec<&str>) = ("Un-indent the current line", vec![]),
+        let 8: (String, Vec<&str>) = ("Un-indent the current line", vec!["<", "<"]),
         // =%    Indent the code between parenthesis
-        let 9: (String, Vec<&str>) = ("Indent the code between parethesis", vec![]),
+        let 9: (String, Vec<&str>) = ("Indent the code between parethesis", vec!["=", "%"]),
         // 1GVG= Indent the entire file
-        let 10: (String, Vec<&str>) = ("Indent the current file", vec![]),
+        let 10: (String, Vec<&str>) = ("Indent the current file", vec!["1", "G", "V", "G"]),
 
     }
 
     pub struct autocomplete_vim_commands() {
         // Ctrl+n Ctrl+p        Complete the suggested word (Insert Mode)
-        let 0: (String, Vec<&str>) = ("Complete the suggested word (Insert Mode)", vec![]),
+        let 0: (String, Vec<&str>) = ("Complete the suggested word (Insert Mode)", vec!["[ctrl]", "+", "n", "[ctrl]", "+", "p"]),
         // Ctrl+x Ctrl+l        Complete the suggested line
-        let 1: (String, Vec<&str>) = ("Complete the suggested line", vec![]),
+        let 1: (String, Vec<&str>) = ("Complete the suggested line", vec!["[ctrl]", "+", "x", "[ctrl]", "+", "l"]),
         // :set dictionary=en   Define en as active dictionary
-        let 2: (String, Vec<&str>) = ("Define en as active dictionary", vec![]),
+        let 2: (String, Vec<&str>) = ("Define en as active dictionary", vec![":", "s", "e", "t", " ", "d", "i", "c", "t", "t", "i", "o", "n", "a", "r", "y", "=", "e", "n"]),
         // Ctrl+x Ctrl+k        Complete with the active dictionary
-        let 3: (String, Vec<&str>) = ("Complete with the active dictionary", vec![]),
+        let 3: (String, Vec<&str>) = ("Complete with the active dictionary", vec!["[ctrl]", "+", "x", "[ctrl]", "+", "k"]),
 
     }
 
     pub struct unix_only_vim_commands() {
          // :!get        Execute the get Unix command, then return to Vim
-         let 0: (String, Vec<&str>) = ("Execute the get Unix command, then retun to Vim", vec![]),
+         let 0: (String, Vec<&str>) = ("Execute the get Unix command, then retun to Vim", vec![":", "!", "g", "e", "t"]),
          // !!get Execute the get Unix command and insert output in current file
-         let 1: (String, Vec<&str>) = ("Execute the Unix command and insert output in current file", vec![]),
+         let 1: (String, Vec<&str>) = ("Execute the Unix command and insert output in current file", vec!["!", "!", "g", "e", "t"]),
          //:sh   Return to Unix shell
-         let 2: (String, Vec<&str>) = ("Return to Unix shell", vec![]), 
+         let 2: (String, Vec<&str>) = ("Return to Unix shell", vec![":", "s", "h"]), 
          //$exit Exit the Unix shell and return to Vim
-         let 3: (String, Vec<&str>) = ("Exit the Unix shell and return to Vim", vec![]),
+         let 3: (String, Vec<&str>) = ("Exit the Unix shell and return to Vim", vec!["$", "e", "x", "i", "t"]),
          // m {q-p}      Marks the current position as {q-p}
-         let 4: (String, Vec<&str>) = ("Mark the current position as {q-p}", vec![]),
+         let 4: (String, Vec<&str>) = ("Mark the current position as {q-p}", vec!["m", " ", "{", "q", "-", "}"]),
          //‘ {q-p}       Move to position {q-p} (used after marking)
-         let 5: (String, Vec<&str>) = ("Move to position {q-p} (used after marking)", vec![]),
+         // let 5: (String, Vec<&str>) = ("Move to position {q-p} (used after marking)", vec!["", "{", "q", "-", "p", "}"]),
          //“     Move to previously marked position
-         let 6: (String, Vec<&str>) = ("Move to previously marked position", vec![]), 
+         // let 6: (String, Vec<&str>) = ("Move to previously marked position", vec!["""]), 
          //:ab mail hi@designbombs.com   Define mail as abbreviation of hi@designbombs.com
-         let 7: (String, Vec<&str>) = ("Define mail as abbreviation of hi@designbombs.com", vec![]),
+         let 7: (String, Vec<&str>) = ("Define mail as abbreviation of hi@designbombs.com", vec![":", "a", "b", " ", "m", "a", "i", "l", " ", "h", "i", "@", "d", "e", "s", "i", "g", "n", ]),
     }
 }
