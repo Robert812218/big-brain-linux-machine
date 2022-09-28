@@ -4,16 +4,20 @@ import command_list from "wasm-lib";
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import LinuxGame from './LinuxGame';
+import VimGame from './VimGame';
+
 
 export default function App(props: any) {   
   const [ans, setAns] = useState(0); 
+  const [view, setView] = useState<any>("VimGame");
   useEffect(() => {
     init().then(() => {
       setAns(add(5, 5));
     })  
   }, []) 
   
-
+  
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -24,12 +28,12 @@ export default function App(props: any) {
 	<h3>this is the game</h3>
         <h2>Linux or Vim?</h2>
 	<div className="Game-choice-container">
-	  <button className="Game-choice-button" onClick={() => 
+	{/*  <button className="Game-choice-button" onClick={() => 
 	         alert("You chose Linux") 
 	  }>LINUX</button> 
 	  <button className="Game-choice-button" onClick={() => 
 	        alert("You chose Vim") 
-	  }> VIM </button>
+	  }> VIM </button> */}
 	</div>
       </div>
     </div>
