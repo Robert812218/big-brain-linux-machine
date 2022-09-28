@@ -5,57 +5,57 @@ pub fn () -> {
     pub fn system_based_commands() {
         // 1. System Based Commands
         // uname 	 Displays  Linux system information
-        let : ("", vec![]),
+        let 0: ("Displays Linux system information", vec!["u", "n", "a", "m", "e"]),
         // uname -r	Displays  kernel release information
-        let : ("", vec![]),
+        let 1: ("Displays kernel release information", vec!["u", "n", "a", "m", "e", " ", "-", "r"]),
         // uptime	Displays how long the system has been running including load average
-        let : ("", vec![]),
+        let 2: ("Displays how long the system has been running including the load average", vec!["u", "p", "t", "i", "m", "e"]),
         // hostname	Shows the system hostname
-        let : ("", vec![]),
+        let 3: ("Shows the system hostname", vec!["h", "o", "s", "t", "n", "a", "m", "e"]),
         // hostname -i	Displays the IP address of the system
-        let : ("", vec![]),
+        let 4: ("Displays the IP address of the system", vec!["h", "o", "s", "t", "n", "a", "m", "e", " ", "-", "i"]),
         // last reboot	Shows system reboot history
-        let : ("", vec![]),
+        let 5: ("Shows system reboot history", vec!["l", "a", "s", "t", " ", "r", "e", "b", "o", "o", "t"]),
         // date	Displays current system date and time
-        let : ("", vec![]),
+        let 6: ("Displays current system date and time", vec!["d", "a", "t", "e"]),
         // timedatectl	Query and change the System clock
-        let : ("", vec![]),
+        let 7: ("Query and change the System clock", vec!["t", "i", "m"]),
         // cal	Displays the current calendar month and day
-        let : ("", vec![]),
+        let 8: ("", vec![]),
         // w	Displays currently  logged in users in the system
-        let : ("", vec![]),
+        let 9: ("", vec![]),
         // whoami	Displays who you are logged in as
-        let : ("", vec![]),
+        let 10: ("", vec![]),
         // finger username	Displays information about the user
-        let : ("", vec![]),
+        let 11: ("", vec![]),
     }
 
     pub fn hardware_based_components() {
         // 2. Hardware Based Commands
         // dmesg	Displays bootup messages
-        let : ("", vec![]),
+        let 1: ("", vec![]),
         // cat /proc/cpuinfo	Displays more information about CPU e.g model, model name, cores, vendor id
-        let : ("", vec![]),
+        let 2: ("", vec![]),
         // cat /proc/meminfo	Displays more information about hardware memory e.g. Total and Free memory
-        let : ("", vec![]),
+        let 3: ("", vec![]),
         // lshw	Displays information about system's hardware configuration
-        let : ("", vec![]),
+        let 4: ("", vec![]),
         // lsblk	Displays block devices related information
-        let : ("", vec![]),
+        let 5: ("", vec![]),
         // free -m	Displays free and used memory in the system (-m flag indicates memory in MB)
-        let : ("", vec![]),
+        let 6: ("", vec![]),
         // lspci -tv	Displays PCI devices in a tree-like diagram
-        let : ("", vec![]),
+        let 7: ("", vec![]),
         // lsusb -tv	Displays USB devices in a tree-like diagram
-        let : ("", vec![]),
+        let 8: ("", vec![]),
         // dmidecode	Displays hardware information from the BIOS
-        let : ("", vec![]),
+        let 9: ("", vec![]),
         // hdparm -i /dev/xda	Displays information about disk data
-        let : ("", vec![]),
+        let 10: ("", vec![]),
         // hdparm -tT /dev/xda <:code>	Conducts a read speed test on device xda
-        let : ("", vec![]),
+        let 11: ("", vec![]),
         // badblocks -s /dev/xda	Tests  for unreadable blocks on disk
-        let : ("", vec![]),
+        let 12: ("", vec![]),
     }
     
     pub fn users_management_commands() {
