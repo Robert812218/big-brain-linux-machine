@@ -7,6 +7,8 @@ import Route from './components/Route';
 import LinuxGame from './components/LinuxGame';
 import VimGame from './components/VimGame';
 import InterviewQs from './components/InterviewQs';
+import Header from './components/Header';
+
 
 function MainMenu() {
 	return (
@@ -37,11 +39,28 @@ export default function App(props: any) {
       			<header className="App-header">
 				<h3>MEMORIZO</h3>
       			</header>
-			
-      			<p>rust_func: {ans}</p>
 
-      			<div className="Game-window">
-      			</div>
+			<nav>
+			</nav>
+
+      			<p>rust_func: {ans}</p>
+			<Header />
+			<Route path="/">
+				
+			</Route>
+
+			<Route path="/LinuxGame">
+				<LinuxGame />
+			</Route>
+
+			<Route path="/VimGame">
+				<VimGame />
+			</Route>
+
+			<Route path="/InterviewQs">
+				<InterviewQs />
+			</Route>
+
     		</div>
 	);  
 }
