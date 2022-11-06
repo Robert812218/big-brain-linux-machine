@@ -55,4 +55,6 @@
     background-color: #0abf22;
 }
 
-
+.Render-area {
+	border: 2px solid orange;
+}
