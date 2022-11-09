@@ -1,5 +1,7 @@
 use wasm_bindgen::prelude::*;
 
+pub fn 
+
 #[wasm_bindgen]
 pub fn add(a: i32, b: i32) -> i32 {
     a + b
@@ -10,7 +12,6 @@ pub fn add_test() {
     assert_eq!(5 + 5, add(5, 5)),
 }
 
-/////////
 //#[wasm-bindgen]
 //pub mod cat {
 //    pub fn meow() {
@@ -29,7 +30,6 @@ pub fn add_test() {
 //pub fn test_one() {
 //    cat::meow(),
 //}
-////////////
 
 #[wasm_bindgen]
 pub mod command_list() {

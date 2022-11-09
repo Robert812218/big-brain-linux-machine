@@ -1,17 +1,28 @@
-.App {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    width: 100vw;
+* {
+	background-color: gray;
+}
+
+.App-container {
+	display: flex;
+	flex-direction: column;
+	border: 5px solid black;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .App-header {
-    border: 2px solid blue;
-    padding: 5% 15% 5% 15%;
-    margin: 2% 2% 2% 2%;
-    color: white;
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid red;
 }
 
+.Game-container {
+	border: 5px solid black;
+}
+
+.VimGame {
+	
+}

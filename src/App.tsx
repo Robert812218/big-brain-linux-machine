@@ -29,69 +29,57 @@ export default function App(props: any) {
 
   	useEffect(() => {
     		init().then(() => {
-      				setAns(add(5, 5));
-    			})  
-  		}, []) 
+      			setAns(add(5, 5));
+			
+    		})  
+  	}, []) 
  	
 
 	return (
-    		<div className="App">
-      			<header className="App-header">
-				<h3>MEMORIZO</h3>
-      			</header>
+    		<div className="App-container">
 
-			<nav>
-			</nav>
+      			<div className="App-header">
+				<header>MEMORIZO</header>
+				<nav>
+					<Header />
+					<div className="Route-component">
+						<Route path="/">
+						
+						</Route>
+					</div>
+					
+					<div className="Route-component">	
+						<Route path="/LinuxGame">
+							<LinuxGame />
+						</Route>
+					</div>
+
+					<div className="Route-component">
+						<Route path="/VimGame">
+							<VimGame />
+						</Route>
+					</div>
+
+					<div className="Route-component">
+						<Route path="/InterviewQs">
+							<InterviewQs />
+						</Route>
+					</div>
+				</nav>
+      			</div>
+			
+			<div className="Game-container">
+				
+			</div>
+
+			<div>
+			
+			</div>
 
       			<p>rust_func: {ans}</p>
-			<Header />
-			<Route path="/">
-				
-			</Route>
-
-			<Route path="/LinuxGame">
-				<LinuxGame />
-			</Route>
-
-			<Route path="/VimGame">
-				<VimGame />
-			</Route>
-
-			<Route path="/InterviewQs">
-				<InterviewQs />
-			</Route>
 
     		</div>
 	);  
 }
 
 
-// export default function App(props: any) {   
-//   	const [ans, setAns] = useState(0); 
-//   	const [view, setView] = useState<any>("");
-// 
-//   	useEffect(() => {
-//     		init().then(() => {
-//       				setAns(add(5, 5));
-//     			})  
-//   		}, []) 
-//   
-// 
-// 	return (
-//     		<div className="App">
-//       			<header className="App-header">
-// 				<h3>MEMORIZO</h3>
-//       			</header>
-//       			<div className="Game-window">
-//       				<p>rust_func: {ans}</p>
-// 				<h3>this is the game</h3>
-// 			<div className="Game-choice-container">
-// 				<button className="Game-choice-button" onClick={setView}>Linux</button>
-// 				<button className="Game-choice-button" onClick={setView}>Vim</button>
-// 				<button className="Game-choice-button" onClick={setView}>Interview</button>
-// 		
-// 	</div>
-//       </div>
-//     </div>
-//   );  
-// }
